@@ -58,11 +58,11 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * currentSpeed * Time.deltaTime);
 
         // 4. ‚§È¥ Ë«π°√–‚¥¥ (Jump)
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            //  Ÿµ√ø‘ ‘° Ï: v = sqrt(h * -2 * g)
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
+        //if (Input.GetButtonDown("Jump") && isGrounded)
+        //{
+        //    //  Ÿµ√ø‘ ‘° Ï: v = sqrt(h * -2 * g)
+        //    velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        //}
 
         // 5. „ Ë·√ß‚πÈ¡∂Ë«ß (Gravity)
         velocity.y += gravity * Time.deltaTime;
